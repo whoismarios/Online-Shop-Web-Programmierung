@@ -4,7 +4,6 @@
         <div class="logo"><img src="../images/logo.png" style="width: 7rem; height: 6rem;" alt="Logo"></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
             <!-- NAVIGATION MENUS -->

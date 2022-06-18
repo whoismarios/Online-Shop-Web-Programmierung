@@ -22,6 +22,16 @@
         include 'imports/titelImport.php';
     ?>
 
+    <!--An dieser Stelle wird die User Begrüßung eingefügt
+    Die Bedingung (user ist eingeloggt) muss noch formuliert werden
+    da das entsprechende Div sonst nicht angezeigt wird-->
+    
+    <!-- php include hier -->
+
+    <!-- Slider -->
+    <div class="sliderDiv" id="sliderDiv">
+        <img src="../images/sliderImages/beutel1.jpeg" name="sliderImage" id="sliderImage">
+    </div>
 
     <!--FOOTER IMPORT -->
     <?php

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warenkorb</title>
+    <title>Bestellabschluss</title>
 
    <?php
     include 'imports/headerImport.php';
@@ -12,23 +12,17 @@
 
 </head>
 <body>
-
-    <!-- NAV IMPORT -->
-    <?php
-        include 'imports/navImport.php';
-    ?>
      <!-- Dynamic Titel Import -->
     <?php
         include 'imports/titelImport.php';
     ?>
 
-    <!-- Warenkorb und zur Kasse -->
-    <div class="warenkorbDiv">
-        <div class="artikel">Artikel 1</div>
-        <div class="artikel">Artikel 2</div>
-        <div class="artikel">Artikel 3</div>
 
-        <button class="kasse">Kasse</button>
+    <!-- Bestellvorgang Abgeschlossen Div -->
+    <div class="bestellabschlussDiv">
+        <button>Home</button>
+        <h3>Der Bestellvorgang wurde erfolgreich abgeschlossen! <br> 
+        Vielen Dank für Ihre Bestellung</h3>
     </div>
 
     <!--FOOTER IMPORT -->
