@@ -25,42 +25,42 @@
                 Registrieren
             </legend>
             <p>
-                <label for="usrnm" class="formLabel" id="usrnm">
+                <label for="anrede" class="formLabel" id="anredeID">
                     Anrede:
                 </label>
                 <br>
-                <input type="text" size="30" name="Anrede" id="usrnmInput" placeholder="Anrede" class="formInput">
+                <input type="text" size="30" name="Anrede" id="anredeInputID" placeholder="Anrede" class="formInput">
             </p>
             <p>
-                <label for="usrnm" class="formLabel" id="usrnm">
+                <label for="firstName" class="formLabel" id="firstName">
                     Vorname:
                 </label>
                 <br>
-                <input type="text" size="30" name="Vorname" id="usrnmInput" placeholder="Vorname" class="formInput">
+                <input type="text" size="30" name="firstName" id="firstNameInputID" placeholder="Vorname" class="formInput">
             </p>
             <p>
-                <label for="usrnm" class="formLabel" id="usrnm">
+                <label for="lastName" class="formLabel" id="lastNameID">
                     Nachname:
                 </label>
                 <br>
-                <input type="text" size="30" name="Nachname" id="usrnmInput" placeholder="Nachname" class="formInput">
+                <input type="text" size="30" name="lastName" id="lastNameInputID" placeholder="Nachname" class="formInput">
             </p>
             <p>
-                <label for="usrnm" class="formLabel" id="usrnm">
+                <label for="mail" class="formLabel" id="mailID">
                     E-Mail:
                 </label>
                 <br>
-                <input type="text" size="30" name="EMail" id="usrnmInput" placeholder="E-Mail" class="formInput">
+                <input type="text" size="30" name="mail" id="mailInputID" placeholder="E-Mail" class="formInput">
             </p>
             <p>
-                <label for="psw" class="formLabel" id="psw">
+                <label for="password" class="formLabel" id="passwordID">
                     Passwort:
                 </label>
                 <br>
-                <input type="text" size="30" name="psw" id="pswInput" placeholder="Passwort" class="formInput">
+                <input type="text" size="30" name="passwordInput" id="passwordInputID" placeholder="Passwort" class="formInput">
             </p>
             <br>
-            <input type="submit" value="Registrieren" class="loginButton" id="loginButton">
+            <input type="submit" value="Registrieren" class="loginButton" id="loginButtonID">
             <br>
         </form>
     </div>

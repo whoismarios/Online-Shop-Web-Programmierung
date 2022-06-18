@@ -30,9 +30,24 @@
     <!-- ALLE ARTIKEL LAYOUT -->
 
     <div class="containerAlle">
-        <div class="box">1</div>
+        <div class="box">
+            <img src="" class="imageClass">
+            <h3 class="artikelNameH3">    <!--  Artikelname  -->    </h3>
+            <p>Art.-Nr.: <span class="artikelNummerSpan">   <!-- Artikelnummer -->  </span> </p>
+            <p class="beschreibungP">  <!-- Beschreibung -->   </p>
+            <span class="priceSpan">   <!-- Preis -->   </span>
+            <div class="amountDiv">
+                <button class="amountButtons" id="minusButton">-</button>
+                <label for="amount" class="amountLabel" id="amountLabel">0</label>
+                <button class="amountButtons" id="plusButton">+</button>
+            </div>
+            <button class="addToCart" id="addToCart">In den Warenkorb</button>
+        </div>
+
         <div class="box">2</div>
+        
         <div class="box">3</div>
+        
         <div class="box">4</div>
     </div>
 

@@ -10,7 +10,7 @@
             <div class="menu">
             <li><a href="index.php">Home</a></li>
             <li><a href="alleArtikel.php">Alle Artikel</a></li>
-            <li><a href="warenkorb.php">Warenkorb</a></li>
+            <li><a href="warenkorb.php">Warenkorb <div class="badgeDiv"> <span id="badgeID">0</span> </div></a></li>
             <li><a href="login.php">Login/ Registrierung</a></li>
             <li><a href="logout.php">Logout</a></li>
             </div>
