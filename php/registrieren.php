@@ -57,7 +57,7 @@
                     Passwort:
                 </label>
                 <br>
-                <input type="text" size="30" name="passwordInput" id="passwordInputID" placeholder="Passwort" class="formInput">
+                <input type="password" size="30" name="passwordInput" id="passwordInputID" placeholder="Passwort" class="formInput" >
             </p>
             <br>
             <input type="submit" value="Registrieren" class="loginButton" id="loginButtonID">
