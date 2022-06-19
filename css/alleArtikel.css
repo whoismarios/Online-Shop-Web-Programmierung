@@ -63,7 +63,7 @@
     margin-bottom: -30px;
     max-height: 65px;
 }
-.amountButtons{
+.plusButton, .minusButton{
     width: 90px;
     height: 35px;
     font-size: 20px;
@@ -102,7 +102,7 @@
     -webkit-backdrop-filter: blur(5.1px);    
     border: 1px solid rgba(53, 139, 255, 0.08);
 }
-.addToCart:hover, .amountButtons:hover{
+.addToCart:hover, .plusButton:hover, .minusButton:hover{
     background: rgba(212, 34, 144, 0.768);
     font-weight: bold;
     font-size: 21px;

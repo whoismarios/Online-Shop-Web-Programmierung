@@ -20,7 +20,7 @@
 
     <!-- Login Form -->
     <div class="loginFormDiv">
-        <form role="form" method="post" action="checklogin.php" class="loginForm">
+        <form role="form" method="POST" action="checklogin.php" class="loginForm">
             <legend class="formText">
                 Registrieren
             </legend>

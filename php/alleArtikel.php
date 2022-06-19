@@ -30,57 +30,34 @@
     <!-- ALLE ARTIKEL LAYOUT -->
 
     <div class="containerAlle">
-        <div class="box">
-            <img src="../images/alleArtikel/1.jpg" class="imageClass">
-            <h3 class="artikelNameH3">  Variant M4310 <!--  Artikelname  -->    </h3>
-            <p class="artNrPräfix">Art.-Nr.: <span class="artikelNummerSpan">   1<!-- Artikelnummer --></span> Bestand: <span class="artikelNummerSpan">10</span> </p>
-            <p class="beschreibungP">  20 Beutel<!-- Beschreibung -->   </p>
-            <h4 class="priceSpan">   <!-- Preis --> 19.90€  </h4>
-            <div class="amountDiv">
-                <button class="amountButtons" id="minusButton">-</button>
-                <label for="amount" class="amountLabel" id="amountLabel">0</label>
-                <button class="amountButtons" id="plusButton">+</button>
-            </div>
-            <button class="addToCart" id="addToCart">In den Warenkorb</button>
-        </div>
-
-
         <?php
             include 'imports/dbSettingsAndConnImport.php';
 
             $sql = "SELECT * FROM artikel";
+            
 
             foreach($conn->query($sql) as $row){
+                $i=1;
                 echo "
                 <div class='box'>
-                <img src='../images/alleArtikel/1.jpg' class='imageClass'>
-                <h3 class='artikelNameH3'>".$row['kurztext']."</h3>
-                <p class='artNrPräfix'>Art.-Nr.: <span class='artikelNummerSpan'>".$row['artNr']."</span> Bestand: <span class='artikelNummerSpan'>10</span> </p>
-                <p class='beschreibungP'>  20 Beutel<!-- Beschreibung -->   </p>
-                <h4 class='priceSpan'>   <!-- Preis --> 19.90€  </h4>
-                <div class='amountDiv'>
-                    <button class='amountButtons' id='minusButton'>-</button>
-                    <label for='amount' class='amountLabel' id='amountLabel'>0</label>
-                    <button class='amountButtons' id='plusButton'>+</button>
-                </div>
-                <button class='addToCart' id='addToCart'>In den Warenkorb</button>
-            </div> 
+                    <img src='../images/alleArtikel/".$row['artNr'].".jpg' class='imageClass'>
+                    <h3 class='artikelNameH3'>".$row['kurztext']."</h3>
+                    <p class='artNrPräfix'>Art.-Nr.: <span class='artikelNummerSpan'>".$row['artNr']."</span> Bestand: <span class='artikelNummerSpan'>".$row['bestand']."</span> </p>
+                    <p class='beschreibungP'>".$row['beschreibung']."</p>
+                    <h4 class='priceSpan'>".$row['preis']."</h4>
+                    <div class='amountDiv'>
+                        <button class='minusButton' id='minusButton".$i."'>-</button>
+                        <label for='amount' class='amountLabel' id='amountLabel".$i."'>0</label>
+                        <button class='plusButton' id='plusButton".$i."'>+</button>
+                    </div>
+                    <button class='addToCart' id='addToCart'>In den Warenkorb</button>
+                </div> 
                 ";
+                $i=$i+1;
             }
             $conn=null;
         ?>
-
-        <div class="box">2</div>
-        
-        <div class="box">3</div>
-        
-        <div class="box">4</div>
     </div>
-
-     
-
-
-
 
     <!--FOOTER IMPORT -->
     <?php
