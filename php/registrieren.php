@@ -20,17 +20,10 @@
 
     <!-- Login Form -->
     <div class="loginFormDiv">
-        <form role="form" method="POST" action="checklogin.php" class="loginForm">
+        <form role="form" method="post" action="checkReg.php" class="loginForm">
             <legend class="formText">
                 Registrieren
             </legend>
-            <p>
-                <label for="anrede" class="formLabel" id="anredeID">
-                    Anrede:
-                </label>
-                <br>
-                <input type="text" size="30" name="Anrede" id="anredeInputID" placeholder="Anrede" class="formInput">
-            </p>
             <p>
                 <label for="firstName" class="formLabel" id="firstName">
                     Vorname:
@@ -46,18 +39,11 @@
                 <input type="text" size="30" name="lastName" id="lastNameInputID" placeholder="Nachname" class="formInput">
             </p>
             <p>
-                <label for="mail" class="formLabel" id="mailID">
+                <label for="email" class="formLabel" id="mailID">
                     E-Mail:
                 </label>
                 <br>
-                <input type="text" size="30" name="mail" id="mailInputID" placeholder="E-Mail" class="formInput">
-            </p>
-            <p>
-                <label for="password" class="formLabel" id="passwordID">
-                    Passwort:
-                </label>
-                <br>
-                <input type="password" size="30" name="passwordInput" id="passwordInputID" placeholder="Passwort" class="formInput" >
+                <input type="text" size="30" name="email" id="mailInputID" placeholder="E-Mail" class="formInput">
             </p>
             <br>
             <input type="submit" value="Registrieren" class="loginButton" id="loginButtonID">

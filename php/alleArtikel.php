@@ -11,7 +11,7 @@
    ?> 
 
 </head>
-<body>
+<body id="test1">
 
     <!-- NAV IMPORT -->
     <?php
@@ -35,9 +35,9 @@
 
             $sql = "SELECT * FROM artikel";
             
+            $i=1;
 
             foreach($conn->query($sql) as $row){
-                $i=1;
                 echo "
                 <div class='box'>
                     <img src='../images/alleArtikel/".$row['artNr'].".jpg' class='imageClass'>
@@ -46,7 +46,7 @@
                     <p class='beschreibungP'>".$row['beschreibung']."</p>
                     <h4 class='priceSpan'>".$row['preis']."</h4>
                     <div class='amountDiv'>
-                        <button class='minusButton' id='minusButton".$i."'>-</button>
+                        <button onClick='test(".$i.")' class='minusButton' id='minusButton".$i."'>-</button>
                         <label for='amount' class='amountLabel' id='amountLabel".$i."'>0</label>
                         <button class='plusButton' id='plusButton".$i."'>+</button>
                     </div>

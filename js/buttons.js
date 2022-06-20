@@ -1,119 +1,8 @@
-let plusButton = document.getElementById("plusButton");
-let minusButton = document.getElementById("minusButton");
-let amountLabel = document.getElementById("amountLabel");
+//let plusButton = document.getElementById("plusButton");
+//let minusButton = document.getElementById("minusButton");
+//let amountLabel = document.getElementById("amountLabel");
 let badgeID = document.getElementById("badgeID");
 
-//Create addToCart Elements
-try{
-    let addToCartArray = ["addToCart1", "addToCart2", "addToCart3", "addToCart4", "addToCart5", "addToCart6", "addToCart7", "addToCart8", "addToCart9"];
-    let i = 0;
-    addToCartArray.forEach(element => {
-        let j = addToCartArray[i];
-        addToCartArray[i] = document.getElementById(addToCartArray[i]);
-        console.log([i]);
-        console.log(j);
-        addToCartArray[i].addEventListener('click', addToCart)
-        addToCartArray[i].style.color = "red";
-        i++;
-    });
-} catch(Exception){
-    console.log(Exception);
-}
-
-//Create plusButton Elements
-try{
-    let plusButtonArray = ["plusButton1", "plusButton2", "plusButton3", "plusButton4", "plusButton5", "plusButton6", "plusButton7", "plusButton8", "plusButton9"];
-    let k = 0;
-    plusButtonArray.forEach(element => {
-        //let j = plusButtonArray[k];
-        document.getElementById(plusButtonArray[k]);
-        //j = document.getElementById(plusButtonArray[k]);
-        //j.addEventListener('click', plusOne(k));
-        //j.style.color = "red";
-        console.log(plusButtonArray[k]);
-        plusButtonArray[k].addEventListener('click', plusOne(k));
-        plusButtonArray[k].style.color = "red";
-
-        k++;
-    });
-} catch(Exception){
-    console.log(Exception);
-} 
-
-try{
-
-    let plusButtons = document.getElementsByClassName("plusButton");
-    /*plusButtons.forEach(element => {
-        addEventListener('click', plusOne);
-        style.color = "red";
-    });*/
-
-    plusButtons.forEach(function(element) {
-        element.style.color = "red";
-        element.addEventListener('click', plusOne);
-      });
-
-} catch(Exception){
-    console.log(Exception);
-}
-
-//Create minusButton Elements
-try{
-    let minusButtonArray = ["minusButton1", "minusButton2", "minusButton3", "minusButton4", "minusButton5", "minusButton6", "minusButton7", "minusButton8", "minusButton9"];
-    let a = 0;
-    minusButtonArray.forEach(element => {
-        let j = minusButtonArray[a];
-        j = document.getElementById(minusButtonArray[a]);
-        j.addEventListener('click', minusOne);
-        j.style.color = "red";
-        a++;
-    });
-} catch(Exception){
-    console.log(Exception);
-}
-
-//Create amountLabel Elements
-try{
-    let amountLabelArray = ["amountLabel1", "amountLabel2", "amountLabel3", "amountLabel4", "amountLabel5", "amountLabel6", "amountLabel7", "amountLabel8", "amountLabel9"];
-    let amountLabelElementArray = [];
-    let b = 0;
-    amountLabelArray.forEach(element => {
-        let j = amountLabelArray[b];
-        j = document.getElementById(amountLabelArray[b]);
-        amountLabelElementArray[b] = j;
-        j.style.color = "red";
-        b++;
-    });
-} catch(Exception){
-    console.log(Exception);
-} 
-
-
-//plusButton.addEventListener('click', plusOne);
-//minusButton.addEventListener('click', minusOne);
-//badgeID.addEventListener('click', addToCart);
-
-function plusOne(){
-    //if(/**Bedingung: Anzahl auf dem Display darf nicht größer sein als der Bestand */){
-    let j = document.getElementById("amountLabel").innerHTML; 
-    j++;
-    j.innerHTML = j;
-    //} else {
-
-    //}
-    console.log("Plus");
-}
-
-function minusOne(){
-    let i = document.getElementById("amountLabel").innerHTML; 
-    
-    if(i > 0){
-        i--;
-        document.getElementById("amountLabel").innerHTML = i;
-    } else {
-        throw new Exception("A negative Amount is not possible!");
-    }
-}
 
 function badgeCounter(){
     //Speichere den Inhalt des Labels in einer Variable
@@ -141,3 +30,13 @@ function addToCart(){
     badgeCounter();
 }
 
+function test (event) {
+    console.dir(event);
+    console.log("Test");
+
+    console.log(event.parentNode.childNodes[3].outerText);
+    event.parentNode.childNodes[3].outerText = 6;
+}
+
+let test1 = document.getElementById("test1");
+console.dir(test1);
