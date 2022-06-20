@@ -20,7 +20,7 @@
 
     <!-- Bestellvorgang Abgeschlossen Div -->
     <div class="bestellabschlussDiv">
-        <button>Home</button>
+        <button onclick="location.href = 'index.php';"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
         <h3>Der Bestellvorgang wurde erfolgreich abgeschlossen! <br> 
         Vielen Dank für Ihre Bestellung</h3>
     </div>

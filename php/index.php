@@ -33,6 +33,9 @@
         <img src="../images/sliderImages/beutel1.jpeg" name="sliderImage" id="sliderImage">
     </div>
 
+    <h3><a href="bestellabschluss.php">Bestellabschluss</a></h3>
+    <h3><a href="neuesPasswort.php">Neues Passwort</a></h3>
+
     <!--FOOTER IMPORT -->
     <?php
         include 'imports/footerImport.php';

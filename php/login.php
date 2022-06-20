@@ -26,17 +26,17 @@
             </legend>
             <p>
                 <label for="usrnm" class="formLabel" id="usrnm">
-                    Username:
+                    E-Mail:
                 </label>
                 <br>
-                <input type="text" size="30" name="Username" id="usrnmInput" placeholder="Username" class="formInput">
+                <input type="text" size="30" name="Username" id="usrnmInput" placeholder="E-Mail" class="formInput">
             </p>
             <p>
                 <label for="psw" class="formLabel" id="psw">
                     Passwort:
                 </label>
                 <br>
-                <input type="text" size="30" name="psw" id="pswInput" placeholder="Passwort" class="formInput">
+                <input type="password" size="30" name="psw" id="pswInput" placeholder="Passwort" class="formInput">
             </p>
             <br>
             <input type="submit" value="Login" class="loginButton" id="loginButton">
