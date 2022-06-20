@@ -1,8 +1,11 @@
 .titelDiv{
     text-align: center;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     width: 50%;
+    height: auto;
     margin-left: 25%;
+    
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.35);
     border-radius: 16px;
@@ -19,6 +22,7 @@
 }
 */
 .title{
+    /*
     width: 30%;
     height: auto;
     min-height: 50px;
@@ -26,4 +30,10 @@
     margin-left: 35%;
     font-size: 35px;
     text-align: center;
+    */
+    width: 30%;
+    height: auto;
+    min-height: auto;
+    float: left;
+    justify-content: space-between;
 }
