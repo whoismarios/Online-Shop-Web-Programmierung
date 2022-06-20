@@ -17,20 +17,44 @@
     color: black;
     margin: 10px;
     height: 50px;
-
+    display: flex;
+    justify-content:space-between;
+    align-items: baseline;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+    
     background: rgba(217, 218, 245, 0.113);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
     border: 1px solid rgba(255, 255, 255, 0.45);
+} 
+.artikel h3, .artikel h4 {
+    padding: 5px;
 }
 .kasse{
     margin-left: 40%;
-    /*Button nach unten ausrichten*/
     padding: 10px;
     font-size: 35px;
     background: rgba(195, 13, 13, 0.735);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.deleteButton{
+    background-color: red;
+    color: black;
+    font-weight:800;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.5px);
