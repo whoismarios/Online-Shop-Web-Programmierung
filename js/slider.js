@@ -30,5 +30,3 @@ function changeImage(){
 //Starte Funktion, wenn das die Seite vollständig geladen ist
 window.onload = changeImage;
 
-
-

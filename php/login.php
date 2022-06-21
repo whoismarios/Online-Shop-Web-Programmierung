@@ -43,7 +43,7 @@
             <br>
             <br>
         </form>
-        <button onclick="location.href = 'neuesPasswort.php';" class="neuesPasswort">Passwort vergessen?</button>
+        <button onclick="location.href = 'passwortZurücksetzen.php';" class="neuesPasswort">Passwort vergessen?</button>
     </div>
 
     <br>

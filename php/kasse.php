@@ -25,8 +25,22 @@
     ?>
 
     <!-- Inhalt -->
-    <div class="kassenAnsicht">
-        
+    <div class="warenkorbDiv">
+        <div class="artikel">
+            <h3 style="font-weight: bold;">Gesamtsumme: </h3>
+            <h3 style="font-weight: bold;">0€</h3>
+            <span></span>
+        </div>
+        <div class="versandKostenDiv">
+            <input class="versandkosten" type="radio" name="versandkosten">DPD Versand</input>
+            <input class="versandkosten" type="radio" name="versandkosten">DHL Versand</input>
+            <input class="versandkosten" type="radio" name="versandkosten">DHL Express Versand</input>
+        </div>
+
+        <br><br>
+        <button class="kasse" onclick="location.href = 'kasse.php';">
+            Zahlen
+        </button> 
     </div>
 
 
