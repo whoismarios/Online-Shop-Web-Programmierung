@@ -63,7 +63,7 @@
 }
 .versandKostenDiv{
     display: flex;
-    float:none;
+    float:left;
     justify-content: space-between;
     padding: 10px;
     margin-left: 15px;
@@ -71,4 +71,7 @@
 }
 .versandkosten{
     margin: 10px;
+}
+.versandArt{
+    text-align: center;
 }

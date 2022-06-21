@@ -27,14 +27,42 @@
     <!-- Inhalt -->
     <div class="warenkorbDiv">
         <div class="artikel">
+            <h3 style="font-weight: bold;">Summe Warenkorb: </h3>
+            <span></span>
+            <span></span>
+            <h3 style="font-weight: bold;" id="warenkorbSumme">0</h3>
+            <h3 style="font-weight: bold;">€</h3>
+            <span></span>
+        </div>
+        <div class="artikel">
+            <h3 style="font-weight: bold;">Versandkosten: </h3>
+            <span></span>
+            <span></span>
+            <h3 style="font-weight: bold;" id="versadkostenID">0</h3>
+            <h3 style="font-weight: bold;">€</h3>
+            <span></span>
+        </div>
+        <div class="artikel">
             <h3 style="font-weight: bold;">Gesamtsumme: </h3>
-            <h3 style="font-weight: bold;">0€</h3>
+            <span></span>
+            <span></span>
+            <h3 style="font-weight: bold;" id="gesamtSumme">0</h3>
+            <h3 style="font-weight: bold;">€</h3>
             <span></span>
         </div>
         <div class="versandKostenDiv">
-            <input class="versandkosten" type="radio" name="versandkosten">DPD Versand</input>
-            <input class="versandkosten" type="radio" name="versandkosten">DHL Versand</input>
-            <input class="versandkosten" type="radio" name="versandkosten">DHL Express Versand</input>
+            <div class="versandArt">
+                <input class="versandkosten" type="radio" name="versandkosten" value="9.00" id="dpd">DPD Versand</input>
+                <label for="versandkosten">9€</label>
+            </div>
+            <div class="versandArt">
+                <input class="versandkosten" type="radio" name="versandkosten" value="19.00" id="dhl">DHL Versand</input>
+                <label for="versandkosten">19€</label>
+            </div>
+            <div class="versandArt">
+                <input class="versandkosten" type="radio" name="versandkosten" value="33.00" id="express">DHL Express Versand</input>
+                <label for="versandkosten">33€</label>
+            </div>    
         </div>
 
         <br><br>
