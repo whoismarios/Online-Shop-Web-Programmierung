@@ -38,6 +38,13 @@
     border-radius: 5px;
     background-color: #5fe2ec86;
 }
+.neuesPasswort{
+    font-size: 15px;
+    width: 35%;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #ec5f5f86;
+}
 .registrierenDiv{
     width: auto;
     margin-left: 20%;

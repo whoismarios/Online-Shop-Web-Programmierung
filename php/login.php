@@ -41,7 +41,9 @@
             <br>
             <input type="submit" value="Login" class="loginButton" id="loginButton">
             <br>
+            <br>
         </form>
+        <button onclick="location.href = 'neuesPasswort.php';" class="neuesPasswort">Passwort vergessen?</button>
     </div>
 
     <br>
