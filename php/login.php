@@ -29,14 +29,14 @@
                     E-Mail:
                 </label>
                 <br>
-                <input type="text" size="30" name="Username" id="usrnmInput" placeholder="E-Mail" class="formInput">
+                <input type="text" size="30" name="email" placeholder="E-Mail" class="formInput" autocomplete="off">
             </p>
             <p>
-                <label for="psw" class="formLabel" id="psw">
+                <label for="psw" class="formLabel">
                     Passwort:
                 </label>
                 <br>
-                <input type="password" size="30" name="psw" id="pswInput" placeholder="Passwort" class="formInput">
+                <input type="password" size="30" name="password" placeholder="Passwort" class="formInput">
             </p>
             <br>
             <input type="submit" value="Login" class="loginButton" id="loginButton">

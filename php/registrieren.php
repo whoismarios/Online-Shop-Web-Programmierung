@@ -20,7 +20,7 @@
 
     <!-- Login Form -->
     <div class="loginFormDiv">
-        <form role="form" method="post" action="checkReg.php" class="loginForm" autocomplete="off">
+        <form role="form" method="post" action="checkreg2.php" class="loginForm" autocomplete="off">
             <legend class="formText">
                 Registrieren
             </legend>

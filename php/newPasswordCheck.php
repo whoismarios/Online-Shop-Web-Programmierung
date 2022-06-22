@@ -84,6 +84,6 @@
     //Breche Verbindung zur DB wieder ab
     $conn=null;
 
-    header ("Location: index.php");
+    //header ("Location: index.php");
 
 ?>

@@ -1,10 +1,11 @@
-let dpdValue = document.getElementById("dpd").value;
-let dhlValue = document.getElementById("dhl").value;
-let expressValue = document.getElementById("express").value;
-let warenkorbValue =document.getElementById("warenkorbSumme").innerHTML;
+let dpdValue = +document.getElementById("dpd").value;
+let dhlValue = +document.getElementById("dhl").value;
+let expressValue = +document.getElementById("express").value;
+let warenkorbValue =+document.getElementById("warenkorbSumme").innerHTML;
 
 parseFloat(warenkorbValue);
 parseFloat(dpdValue);
+parseFloat(expressValue);
 console.log(warenkorbValue);
 
 let dpd = document.getElementById("dpd");

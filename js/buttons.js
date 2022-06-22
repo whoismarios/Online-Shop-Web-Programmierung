@@ -1,6 +1,3 @@
-//let plusButton = document.getElementById("plusButton");
-//let minusButton = document.getElementById("minusButton");
-//let amountLabel = document.getElementById("amountLabel");
 let badgeID = document.getElementById("badgeID");
 
 
@@ -22,58 +19,14 @@ function badgeCounter(){
 }
 
 
-function addToCart(){
-    //TODO
-    
-    
-    //Führe die Badge Counter Methode aus, nachdem die Artikel dem Warenkorb zugefügt worden sind
-    badgeCounter();
-}
-
-/*
-function test (event) {
-    console.dir(event);
-    console.log("Test");
-
-    console.log(event.parentNode.childNodes[3].outerText);
-    event.parentNode.childNodes[3].outerText = 6;
-}
-*/
-/*
-let test1 = document.getElementById("test1");
-console.dir(test1);
-
-
-let test2 = document.getElementById("amountID2");
-console.dir(test2);
-*/
-let test3 = document.getElementById("boxID1");
-console.dir(test3);
+//let test3 = document.getElementById("boxID1");
+//console.dir(test3);
 
 /**
  * EventListener
  */
 
-
-
-
-/*var plusButton1 = document.getElementById("plusButton1");
-    plusButton1.addEventListener('click', function(){
-        let g = this.parentNode.childNodes[3].innerHTML;
-        g++;
-        console.log(g);
-        this.parentNode.childNodes[3].innerHTML = g; 
-    });*/
-    /*
-    function plusOne(event){
-        let g = this.parentNode.childNodes[3].innerHTML;
-        g++;
-        console.log(g);
-        this.parentNode.childNodes[3].innerHTML = g;
-    }
-    */
-
-    var plusButtonArray = document.getElementsByClassName("plusButton");
+   /* var plusButtonArray = document.getElementsByClassName("plusButton");
 
     for(var d = 0; d < plusButtonArray.length; d++){
         plusButtonArray[d].addEventListener('click', function(){
@@ -82,10 +35,23 @@ console.dir(test3);
             console.log(g);
             this.parentNode.childNodes[3].innerHTML = g;  
         }
-    )}false;
+    )}false;*/
+/*
+    function plusOne(event){
+        console.log("test");
+        console.dir(event);
+        event.preventDefault();
+        //console.dir(event);
+        /*
+            let g = this.parentNode.childNodes[3].innerHTML;
+            g++;
+            console.log(g);
+            this.parentNode.childNodes[3].innerHTML = g;  */
+    
+    
 
-    var minusButtonArray = document.getElementsByClassName("minusButton");
-
+    //var minusButtonArray = document.getElementsByClassName("minusButton");
+    /*
     for(var q = 0; q < minusButtonArray.length; q++){
         minusButtonArray[q].addEventListener('click', function(){
             let w = this.parentNode.childNodes[3].innerHTML;
@@ -98,7 +64,8 @@ console.dir(test3);
             }
         }
     )}false;
-
+*/
+/*
     var addToCartArray = document.getElementsByClassName("addToCart");
 
     for(var t = 0; t < addToCartArray.length; t++){
@@ -106,16 +73,14 @@ console.dir(test3);
             let o = this.parentNode.childNodes[11].childNodes[3].innerHTML;
             console.log(o);
             if(o != 0){
-                var form = document.createElement('form');
-                form.method = 'post';
-
-                var input1 = document.createElement('input');
-                var input2 = document.createElement('input');
-                var input3 = document.createElement('input');
                 
-                form.appendChild(input1, input2, input3);
+                let r = badgeID.innerHTML;
+                var sum = r+o;
+                badgeID.innerHTML = sum;
 
+                this.parentNode.childNodes[11].childNodes[3].innerHTML = 0;               
                 
             };
         });
     }
+    */

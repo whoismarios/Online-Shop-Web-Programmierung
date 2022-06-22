@@ -98,6 +98,15 @@
         </button>
     </div>
 
+    <br><br>
+
+    <div class="registrierenDiv">
+        <h2 class="regÜberschrift">Mein Profil</h2>
+        <button class="regButton" onclick="location.href = 'letztenBestellungen.php';">
+            Letzte Bestellungen
+        </button>
+    </div>
+
     <!--FOOTER IMPORT -->
     <?php
         include 'imports/footerImport.php';
